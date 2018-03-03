@@ -20,6 +20,9 @@
 share_item-darwin-x64/
 share_item-win32-x64/
 
+# webpack
+public/app.js
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

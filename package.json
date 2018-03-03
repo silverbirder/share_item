@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.11.1",
     "jest-expo": "25.0.0",
-    "react-test-renderer": "16.2.0"
+    "react-dom": "^16.2.0",
+    "react-native-scripts": "1.11.1",
+    "react-redux": "^5.0.7",
+    "react-test-renderer": "16.2.0",
+    "redux": "^3.7.2",
+    "webpack": "^4.0.1",
+    "webpack-dev-server": "^3.1.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -13,7 +18,12 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js"
+    "test": "node node_modules/jest/bin/jest.js",
+    "electron": "electron-prebuilt ./public/index.js",
+    "web": "webpack -p --progress && node server.js",
+    "dev-web": "webpack-dev-server --config webpack.config.js",
+    "pack:mac": "electron-packager ./public rss_reader --platform=darwin --arch=x64",
+    "pack:win": "electron-packager ./public rss_reader --platform=win32 --arch=all"
   },
   "jest": {
     "preset": "jest-expo"
