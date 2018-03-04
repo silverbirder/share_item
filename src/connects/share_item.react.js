@@ -1,18 +1,17 @@
 import { connect } from 'react-redux'
 import {
-  fetchQiita,
+  doTmp,
 } from '../actions'
 
 const mapStateToProps = (state) => {
   return {
-    items: state.fetchQiita.items,
-    loaded: state.fetchQiita.loaded,
+    tmp: state.doTmp
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-     fetchQiita: url => dispatch(fetchQiita(url))
+    doTmp: dispatch(doTmp())
   }
 }
 

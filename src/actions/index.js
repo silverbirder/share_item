@@ -1,19 +1,7 @@
-export const FETCH_QIITA = 'FETCH_QIITA'
+export const DO_TMP = 'DO_TMP'
 
-export const fetchQiita = (url) => {
-  return dispatch => {
-    fetch(url)
-    .then((response) => response.json())
-    .then((responseData) => {
-      dispatch(ok_qiita(responseData))
-    });  
-  }
-}
-
-function ok_qiita(responseData) {
+export const doTmp = () => {
   return {
-    type: FETCH_QIITA,
-    data: responseData,
-    loaded: true,
+    type: DO_TMP
   }
 }

@@ -2,8 +2,8 @@ import {
   combineReducers,
 } from 'redux'
 
-import fetchQiita from './fetchQiita'
+import doTmp from './doTmp'
 
 export default combineReducers({
-  fetchQiita,
+  doTmp,
 })

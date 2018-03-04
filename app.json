@@ -2,9 +2,9 @@
   "expo": {
     "sdkVersion": "25.0.0",
     "name":"share_item",
-    "icon":"./assets/icons/icons.png",
+    "icon":"./assets/icons/icon.png",
     "loading": {
-      "icon": "./assets/icons/icons.png",
+      "icon": "./assets/icons/icon.png",
       "hideExponentText": false
     },
     "version":"1.0.0"
