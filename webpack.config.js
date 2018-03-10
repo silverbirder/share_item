@@ -1,4 +1,3 @@
-var path = require('path')
 var webpack = require('webpack')
 module.exports = {
   entry: [
@@ -6,8 +5,7 @@ module.exports = {
   ],
   output: {
     filename: 'app.js',
-    path: path.resolve('./public'),
-    publicPath: '/',
+    path: __dirname + '/public'
   },
   target: 'web',
   module: {
@@ -23,7 +21,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './public',
+    contentBase: __dirname + '/public/',
     port: 8080,
     inline: true,
   }
